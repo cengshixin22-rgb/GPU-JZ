@@ -1,0 +1,59 @@
+{
+  "name": "gpu-jz",
+  "version": "0.1.2",
+  "description": "GPU-JZ - GPU/ECC 监控工具（改进自 sertreet/GPU-J，MIT）",
+  "main": "./out/main/index.js",
+  "author": {
+    "name": "cengshixin22-rgb",
+    "url": "https://github.com/cengshixin22-rgb"
+  },
+  "homepage": "https://github.com/cengshixin22-rgb/GPU-JZ",
+  "license": "MIT",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "build:win": "electron-vite build && electron-builder --win",
+    "build:linux": "electron-vite build && electron-builder --linux",
+    "build:mac": "electron-vite build && electron-builder --mac"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.2",
+    "echarts": "^5.6.0",
+    "element-plus": "^2.11.7",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "electron": "^37.2.0",
+    "electron-builder": "^25.1.8",
+    "electron-vite": "^3.1.0",
+    "vite": "^6.3.5"
+  },
+  "build": {
+    "appId": "cn.memristor.gpu-jz",
+    "productName": "GPU-JZ",
+    "files": [
+      "out/**",
+      "resources/**"
+    ],
+    "win": {
+      "target": [
+        "nsis",
+        "portable"
+      ]
+    },
+    "portable": {
+      "artifactName": "GPU-JZ-${version}-portable.exe"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    },
+    "linux": {
+      "target": [
+        "deb",
+        "AppImage"
+      ]
+    }
+  }
+}
