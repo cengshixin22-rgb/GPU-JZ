@@ -59,12 +59,12 @@ GPU 状态与 ECC 错误实时监控工具。监控显卡温度、利用率、�
 
 ## 安装使用
 
-前往 [Releases](../../releases) 下载：
+前往 [Releases](../../releases) 下载（当前 [v0.1.2](https://github.com/cengshixin22-rgb/GPU-JZ/releases/tag/v0.1.2)）：
 
 | 文件 | 说明 |
 |------|------|
 | `GPU-JZ-<version>-portable.exe` | 免安装便携版，双击即用 |
-| `GPU-JZ Setup <version>.exe` | 安装版，带开始菜单与卸载程序 |
+| `GPU-JZ.Setup.<version>.exe` | 安装版，带开始菜单与卸载程序 |
 
 > 未做代码签名，首次运行 Windows SmartScreen 可能提示"已保护你的电脑"，点"更多信息 → 仍要运行"即可。
 
